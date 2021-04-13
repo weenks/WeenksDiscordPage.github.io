@@ -1,3 +1,8 @@
+#LogoImage{
+    width: 10px;
+    height: 10px;
+}
+
 #Title{
     text-align: center;
     text-transform: uppercase;
@@ -9,7 +14,4 @@
     background-color: #4C3F54F7;
 }
 
-#LogoImage{
-    width: 10px;
-    height: 10px;
-}
+
