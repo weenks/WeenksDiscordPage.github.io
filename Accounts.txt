@@ -5,3 +5,7 @@ Google and Gmail
 Git-Hub
   Email: weenksenterprise@gmail.com
   Password: 55Tomates
+  
+Freenom:
+  Email: weenksenterprise@gmail.com
+  Password: 5tomates
