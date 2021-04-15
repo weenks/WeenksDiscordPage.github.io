@@ -9,7 +9,8 @@
     text-align: center;
     text-transform: uppercase;
     color: rgb(255,255,255);
-    
+    width: 4em;
+    height: 4em;
 }
 
 #Body{
