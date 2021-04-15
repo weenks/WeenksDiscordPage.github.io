@@ -1,35 +1,34 @@
-#LogoImage{
+#LogoImage {
     width: 100px;
     height: 100px;
     display: block;
     margin: left;
 }
 
-#Title{
+#Title {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-family: 'Zen Dots', cursive;
     font-size: 4em;
     font-weight: 800;
+    color: rgb(116, 204, 255);
 }
 
-#Body{
+#Body {
     background-color: #4C3F54F7;
 }
 
-#Subtitle{
+#Subtitle {
     text-align: left;
     text-transform: uppercase;
-    color: rgb(255,255,255);
-    padding-left: 10px ;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
 }
 
-span{
+span {
     font-family: 'Rubik', sans-serif;
     font-size: 1em;
     text-align: center;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
-
-
