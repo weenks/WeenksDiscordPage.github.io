@@ -10,13 +10,12 @@
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-family: 'Bungee Inline', cursive;
-    font-size: 4.5em;
-    font-weight: 800;
+    font-size: 5em;
     color: rgb(31, 210, 255);
 }
 
 #Body {
-    background-color: #4C3F54F7;
+    background-color: #46394ef7;
 }
 
 #Subtitle {
