@@ -1,0 +1,19 @@
+#LogoImage{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: left;
+}
+
+#Title{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    
+}
+
+#Body{
+    background-color: #4C3F54F7;
+}
+
+
