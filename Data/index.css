@@ -16,4 +16,11 @@
     background-color: #4C3F54F7;
 }
 
+#Subtitle{
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(255,255,255);
+    /*padding-right: 10px ;*/
+}
+
 
