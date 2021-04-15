@@ -9,10 +9,10 @@
     text-align: center;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Bungee Inline', cursive;
     font-size: 4em;
     font-weight: 800;
-    color: rgb(116, 204, 255);
+    color: rgb(31, 210, 255);
 }
 
 #Body {
@@ -27,6 +27,7 @@
 }
 
 span {
+    text-transform: capitalize;
     font-family: 'Zen Dots', cursive;
     font-size: 1em;
     text-align: center;
