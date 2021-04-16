@@ -33,11 +33,54 @@ p {
     width: 60%;
     height: 100px;
     padding: 15px;
-    margin: auto ;
+    margin: auto;
     line-height: 2;
 }
 
-div{
+.TextDiv,
+.ButtonDiv {
     text-align: center;
     margin: auto;
+}
+
+button {
+    margin: 20px;
+    padding: 16px 50px;
+    border: 3px solid;
+    background-color: rgb(0, 255, 221);
+    color: black;
+    display: inline-block;
+    font-family: 'Zen Dots', cursive;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+button:hover {
+    background-color: rgb(0, 150, 250); /* Green */
+    color: white;
 }
