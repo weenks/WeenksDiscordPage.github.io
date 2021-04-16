@@ -36,3 +36,8 @@ p {
     margin: auto ;
     line-height: 2;
 }
+
+div{
+    text-align: center;
+    margin: auto;
+}
