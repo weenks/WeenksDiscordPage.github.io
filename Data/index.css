@@ -229,3 +229,12 @@ header button:hover{
     background-color:#e03030;
     color: black;
 }
+
+/*Inputs an forms*/
+.inputDiv{
+    
+}
+
+.inputDiv input{
+    display: block;
+}
