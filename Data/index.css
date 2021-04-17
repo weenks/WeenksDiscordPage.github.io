@@ -98,11 +98,10 @@ button:hover {
 
 .FooterContainer {
     background-color: #7e5699;
-    padding: 2rem 0 1rem 0;
-    margin: 0 auto;
-    margin-top: 6rem;
+    padding: 2rem 0 1rem;
+    margin: 6rem auto 0;
     box-sizing: border-box;
-    display:block;
+    display: block;
 }
 
 .Footer {
@@ -123,11 +122,11 @@ button:hover {
     margin-right: 2rem;
 }
 
-.FooterHeading h2{
+.FooterHeading h2 {
     margin-bottom: 1rem;
 }
 
-.FooterHeading a{
+.FooterHeading a {
     color: white;
     text-decoration: none;
     margin-bottom: 0.5rem;
@@ -138,9 +137,32 @@ button:hover {
     transition: 0.3s ease-out;
 }
 
-@media screen and (max-width: 802px){
-    .Footer{
+@media screen and(max-width: 802px) {
+    .Footer {
         padding-top: 2rem;
-        height: 40vh;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and(max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 30vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
     }
 }
