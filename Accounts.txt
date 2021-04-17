@@ -10,4 +10,3 @@ Freenom:
   Email: weenksenterprise@gmail.com
   Password: 5tomates
 
-test
