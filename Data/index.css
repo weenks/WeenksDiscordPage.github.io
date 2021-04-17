@@ -1,22 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Zen Dots', cursive;
+}
+
 #LogoImage {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     display: block;
-    margin: left;
 }
 
 #Title {
     text-align: center;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-family: 'Zen Dots', cursive;
-    font-size: 4em;
-    font-weight: 800;
-    color: rgb(116, 204, 255);
+    font-family: 'Bungee Inline', cursive;
+    font-size: 5em;
+    color: rgb(31, 210, 255);
 }
 
 #Body {
-    background-color: #4C3F54F7;
+    background-color: #4c3f54;
+    height: 100%;
+    min-height: 100%;
 }
 
 #Subtitle {
@@ -26,9 +33,143 @@
     padding-left: 10px;
 }
 
-span {
+#Paragraph {
+    text-transform: uppercase;
     font-family: 'Zen Dots', cursive;
     font-size: 1em;
     text-align: center;
     color: rgb(255, 255, 255);
+    width: 60%;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 2;
+    display: inline-block;
+    position: static;
+}
+
+.TextDiv,
+.ButtonDiv {
+    text-align: center;
+    margin: auto;
+}
+
+/*Buttons Styling*/
+.ButtonDiv button {
+    margin: 20px;
+    padding: 16px 50px;
+    border: 3px solid;
+    background-color: rgb(0, 255, 221);
+    color: black;
+    display: inline-block;
+    font-family: 'Zen Dots', cursive;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+.ButtonDiv button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.ButtonDiv button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.ButtonDiv button:hover span {
+    padding-right: 25px;
+}
+
+.ButtonDiv button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.ButtonDiv button:hover {
+    background-color: rgb(0, 150, 250); /* Green */
+    color: white;
+}
+
+.FooterContainer {
+    background-color: #7e5699;
+    padding: 2rem 0 1rem;
+    margin: 6rem auto 0;
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+}
+
+.Footer {
+    width: 80%;
+    height: 15vh;
+    background-color: #7e5699;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.FooterHeading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.FooterHeading h2 {
+    margin-bottom: 1rem;
+}
+
+.FooterHeading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.FooterHeading a:hover {
+    color: rgb(0, 255, 221);
+    transition: 0.3s ease-out;
+}
+
+/*Style for different dimensions*/
+@media screen and (max-width: 802px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
 }
