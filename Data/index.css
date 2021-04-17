@@ -10,6 +10,8 @@
     width: 90px;
     height: 90px;
     display: block;
+    cursor: pointer;
+    margin-right:auto;
 }
 
 #Title {
@@ -172,4 +174,58 @@
     .FooterHeading a {
         font-size: 0.9em;
     }
+}
+
+/*Nav Menu configuration*/
+header li, header a, header Button{
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerDiv{
+    display: block;
+    margin-right:auto;
+}
+
+
+.NavMenu{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.NavMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavMenu li a {
+    transition: all 0.4s ease 0s;
+}
+
+.NavMenu li a:hover {
+    color: rgb(0, 255, 221);
+}
+
+header button {
+    margin-right: 10px;
+    padding: 9px 25px;
+    background-color:#cc4949;
+    border: 3px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+header button:hover{
+    background-color:#e03030;
+    color: black;
 }
