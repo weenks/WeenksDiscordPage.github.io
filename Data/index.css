@@ -102,6 +102,7 @@
     margin: 6rem auto 0;
     box-sizing: border-box;
     display: block;
+    bottom: 0;
 }
 
 .Footer {
@@ -137,7 +138,7 @@
     transition: 0.3s ease-out;
 }
 
-@media screen and(max-width: 802px) {
+@media screen and (max-width: 802px) {
     .Footer {
         padding-top: 2rem;
         height: 18vh;
@@ -152,10 +153,14 @@
     }
 }
 
-@media screen and(max-width: 690px) {
+@media screen and (max-width: 690px) {
     .Footer {
         padding-top: 2rem;
-        height: 30vh;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
     }
 
     .FooterHeading h2 {
