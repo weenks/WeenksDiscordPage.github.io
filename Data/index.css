@@ -134,7 +134,7 @@ button:hover {
 }
 
 .FooterHeading a:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 221);
     transition: 0.3s ease-out;
 }
 
