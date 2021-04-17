@@ -11,3 +11,5 @@ Freenom:
   Password: 5tomates
 
 test
+
+test 2
