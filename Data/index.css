@@ -7,8 +7,8 @@
 }
 
 #LogoImage {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     display: block;
 }
 
@@ -54,6 +54,7 @@
     margin: auto;
 }
 
+/*Buttons Styling*/
 .ButtonDiv button {
     margin: 20px;
     padding: 16px 50px;
@@ -138,6 +139,7 @@
     transition: 0.3s ease-out;
 }
 
+/*Style for different dimensions*/
 @media screen and (max-width: 802px) {
     .Footer {
         padding-top: 2rem;
