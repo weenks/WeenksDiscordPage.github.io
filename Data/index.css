@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Zen Dots', cursive;
+    font-size: 16px;
 }
 
 #LogoImage {
@@ -22,7 +23,7 @@
     color: rgb(31, 210, 255);
 }
 
-#Body {
+Body {
     background-color: #4c3f54;
     height: 100%;
     min-height: 100%;

@@ -1,0 +1,96 @@
+.inputDiv h2{
+    font-size:1.5rem;
+    font-weight: 700;
+}
+
+.inputDiv a{
+    text-decoration: none;
+    color: rgb(80, 153, 201);
+}
+
+.inputDiv a:hover{
+    text-decoration: underline;
+}
+
+.small{
+    font-size:80%;
+    text-align: center;
+}
+
+.FormsBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+
+}
+
+.inputDiv a{
+    font-weight: 400;
+}
+
+.FormsBlock .copy{
+    color: white;
+    text-align: center;
+}
+
+.FormsBlock .copy p{
+    margin: 1.5em 0;
+    font-size: o.875rem;
+}
+
+.FormsBlock form{
+    width: 328px;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(68, 127, 204);
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.input-container .password{
+    position: relative;
+}
+
+.input-container .password{
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.signup-btn{
+    display: block;
+    width: 100%;
+    background: rgb(68, 127, 204);
+    color: white;
+    font-weight: 700;
+    border: 3px solid;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease 0s
+}
+
+.signup-btn:hover{
+    background-color: rgb(0, 110, 255);
+    cursor: pointer;
+}
