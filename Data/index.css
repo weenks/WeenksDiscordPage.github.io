@@ -209,26 +209,9 @@ header{
 }
 
 .NavMenu li a {
-    transition: all 0.4s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .NavMenu li a:hover {
     color: rgb(0, 255, 221);
 }
-
-header button {
-    margin-right: 10px;
-    padding: 9px 25px;
-    background-color:#cc4949;
-    border: 3px solid;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.4s ease 0s;
-}
-
-header button:hover{
-    background-color:#e03030;
-    color: black;
-}
-
-/*Inputs an forms*/
