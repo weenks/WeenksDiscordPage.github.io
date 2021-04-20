@@ -29,6 +29,11 @@ Body {
     min-height: 100%;
 }
 
+main{
+    min-height: 100%;
+    overflow: auto;
+}
+
 #Subtitle {
     text-align: left;
     text-transform: uppercase;
@@ -104,6 +109,9 @@ Body {
 
 .FooterContainer {
     background-color: #7e5699;
+    position: relative;
+    margin-top: -100px;
+    clear: both;
     padding: 2rem 0 1rem;
     margin: 6rem auto 0;
     box-sizing: border-box;
