@@ -1,1 +1,0 @@
-let userEmail = "lco"
