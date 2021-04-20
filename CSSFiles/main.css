@@ -188,6 +188,12 @@ main{
     }
 }
 
+@media screen and (max-width: 560px) {
+    #NavButton{
+        display: none;
+    }
+}
+
 /*Nav Menu configuration*/
 header li, header a, header Button{
     font-weight: 800;
