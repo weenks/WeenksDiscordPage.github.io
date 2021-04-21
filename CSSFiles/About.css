@@ -23,12 +23,6 @@
     color: rgb(31, 210, 255);
 }
 
-Body {
-    background-color: #4c3f54;
-    height: 100%;
-    min-height: 100%;
-}
-
 main{
     min-height: 100%;
     overflow: auto;
@@ -82,53 +76,12 @@ main{
     transition: 0.3s ease-out;
 }
 
-/*Style for different dimensions*/
-@media screen and (max-width: 802px) {
-    .Footer {
-        padding-top: 2rem;
-        height: 18vh;
-    }
-
-    .FooterHeading h2 {
-        font-size: 1.2em;
-    }
-
-    .FooterHeading a {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .Footer {
-        padding-top: 2rem;
-        height: 20vh;
-    }
-
-    .FooterHeading{
-        width:25%;
-    }
-
-    .FooterHeading h2 {
-        font-size: 1.2em;
-    }
-
-    .FooterHeading a {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    #NavButton{
-        display: none;
-    }
-}
-
 /*Nav Menu configuration*/
 header li, header a, header Button{
     font-weight: 800;
     font-size: 1em;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 header{
@@ -162,6 +115,7 @@ header{
     color: rgb(0, 255, 221);
 }
 
+/*About Styling*/
 #Body{
     height: 100%;
     background: linear-gradient(90deg, #4c3f54 50%, #e2d1d1 50%);
@@ -207,10 +161,6 @@ header{
     height: 100px;
 }
 
-#NavList li a{
-    color: black;
-}
-
 .container h1{
     font-weight: 800;
     font-family: "Bungee Inline", cursive;
@@ -224,4 +174,57 @@ header{
 
 .container p{
     font-size: 1.1em;
+}
+
+/*Style for different dimensions*/
+@media screen and (max-width: 870px) {
+    #sgnButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container h1{
+        font-size: 2.2em;
+    }
 }

@@ -82,47 +82,6 @@ main{
     transition: 0.3s ease-out;
 }
 
-/*Style for different dimensions*/
-@media screen and (max-width: 802px) {
-    .Footer {
-        padding-top: 2rem;
-        height: 18vh;
-    }
-
-    .FooterHeading h2 {
-        font-size: 1.2em;
-    }
-
-    .FooterHeading a {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .Footer {
-        padding-top: 2rem;
-        height: 20vh;
-    }
-
-    .FooterHeading{
-        width:25%;
-    }
-
-    .FooterHeading h2 {
-        font-size: 1.2em;
-    }
-
-    .FooterHeading a {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    #NavButton{
-        display: none;
-    }
-}
-
 /*Nav Menu configuration*/
 header li, header a, header Button{
     font-weight: 800;
@@ -162,6 +121,7 @@ header{
     color: rgb(0, 255, 221);
 }
 
+/*Input Styling*/
 .inputDiv h2{
     font-size:1.5rem;
     font-weight: 700;
@@ -262,4 +222,45 @@ label {
 #Main{
     padding-bottom: 100px;
     padding-top: 50px;
+}
+
+/*Style for different dimensions*/
+@media screen and (max-width: 802px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #NavButton{
+        display: none;
+    }
 }
