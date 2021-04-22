@@ -192,6 +192,28 @@ header{
     color: rgb(0, 255, 221);
 }
 
+/*ScrollBar styling*/
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(105, 133, 143);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 63, 68);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px;  /* creates padding around scroll thumb */
+}
+
+/* Works on Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(51, 63, 68) rgb(105, 133, 143);
+}
+
 /*Style for different dimensions*/
 @media screen and (max-width: 802px) {
     .Footer {
