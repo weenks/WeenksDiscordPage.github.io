@@ -1,3 +1,8 @@
-const SignUpButton = document.querySelector("#SignUp");
-const SignInButton = document.querySelector("#SignIn");
+const LogInButton = document.querySelector(".signup-btn");
+
+LogInButton.addEventListener("click", linkHtmlPage)
+
+function linkHtmlPage(){
+    window.location="Home.html"
+}
 
