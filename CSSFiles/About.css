@@ -199,12 +199,6 @@ body {
 }
 
 /*Style for different dimensions*/
-@media screen and (max-width: 870px) {
-    #sgnButton{
-        display: none;
-    }
-}
-
 @media screen and (max-width: 802px) {
     .Footer {
         padding-top: 2rem;
