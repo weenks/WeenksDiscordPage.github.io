@@ -1,3 +1,1 @@
-function linkHtmlPage(){
-    window.location.href="Home.html";
-}
+const test = o;
