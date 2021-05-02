@@ -32,7 +32,7 @@ main{
 /*Footer code*/
 
 .FooterContainer {
-    background-color: #7e5699;
+    background-color: #5765a3;
     position: relative;
     margin-top: -100px;
     clear: both;
@@ -46,7 +46,7 @@ main{
 .Footer {
     width: 80%;
     height: 15vh;
-    background-color: #7e5699;
+    background-color: #5765a3;
     color: white;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ header li, header a, header Button{
     font-weight: 800;
     font-size: 1em;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header{
@@ -119,7 +119,7 @@ header{
 /*About Styling*/
 #Body{
     height: 100%;
-    background: linear-gradient(90deg, #4c3f54 50%, #e2d1d1 50%);
+    background: linear-gradient(90deg, #e2d1d1 50%, #4c3f54 50%);
 }
 
 .container{
@@ -130,11 +130,11 @@ header{
 }
 
 .profile-section-left h1, .profile-section-left h2, .profile-section-left p{
-    color: #e2d1d1;
+    color: #8d4eb4;
 }
 
 .profile-section-right h1, .profile-section-right h2, .profile-section-right p{
-    color: #8d4eb4;
+    color: #e2d1d1;
 }
 
 
@@ -144,7 +144,7 @@ header{
     width: 50%;
     float: right;
     height: 100%;
-    background-color: #e2d1d1;
+    background-color: #4c3f54;
     z-index: 1010101010
 }
 
@@ -154,7 +154,7 @@ header{
     width: 50%;
     float: left;
     height: 100%;
-    background-color: #4c3f54;
+    background-color: #e2d1d1;
     z-index: 1010101010
 }
 
