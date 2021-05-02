@@ -113,13 +113,13 @@ header{
 }
 
 .NavMenu li a:hover {
-    color: rgb(0, 255, 221);
+    color: #6072c4;
 }
 
 /*About Styling*/
 #Body{
     height: 100%;
-    background: linear-gradient(90deg, #e2d1d1 50%, #4c3f54 50%);
+    background: linear-gradient(90deg, #cab1b1 50%, #4c3f54 50%);
 }
 
 .container{
@@ -134,7 +134,7 @@ header{
 }
 
 .profile-section-right h1, .profile-section-right h2, .profile-section-right p{
-    color: #e2d1d1;
+    color: #cab1b1;
 }
 
 
@@ -154,7 +154,7 @@ header{
     width: 50%;
     float: left;
     height: 100%;
-    background-color: #e2d1d1;
+    background-color: #cab1b1;
     z-index: 1010101010
 }
 
