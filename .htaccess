@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ ./index.html?user=$1 [L,QSA]
+RewriteRule ^(.*)$ ./HTMLPages/About.html?q=$1 [L,QSA]
