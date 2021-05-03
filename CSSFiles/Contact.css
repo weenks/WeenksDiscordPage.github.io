@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+}
+
+Body {
+    background-color: #4c3f54;
+    height: 100%;
+    min-height: 100vh;
+}
+
+#LogoImage {
+    width: 80px;
+    height: 90px;
+    display: block;
+    cursor: pointer;
+    margin-right:auto;
+    padding: 8px;
+}
+
+.FooterContainer {
+    background-color: #5765a3;
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+    padding: 2rem 0 1rem;
+    margin: 6rem auto 0;
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+}
+
+/*Footer Stuff*/
+.Footer {
+    width: 80%;
+    height: 15vh;
+    background-color: #5765a3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.FooterHeading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.FooterHeading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+}
+
+.FooterHeading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.FooterHeading a:hover {
+    color: rgb(0, 255, 221);
+    transition: 0.3s ease-out;
+}
+
+/*Nav Menu configuration*/
+header li, header a, header Button{
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerDiv{
+    display: block;
+    margin-right:auto;
+}
+
+
+.NavMenu{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.NavMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavMenu li a {
+    transition: all 0.5s ease 0s;
+}
+
+.NavMenu li a:hover {
+    color: #6072c4;
+}
+
+/*Contact Stuff*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+}
+.contact .content p{
+    font-weight: 300px;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width:60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:22px;
+}
+
+/*ScrollBar styling*/
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(105, 133, 143);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 63, 68);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px;  /* creates padding around scroll thumb */
+}
+
+/* Works on Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(51, 63, 68) rgb(105, 133, 143);
+}
+
+/*Style for different dimensions*/
+@media screen and (max-width: 802px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container h1{
+        font-size: 2.2em;
+    }
+}
