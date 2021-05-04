@@ -348,13 +348,6 @@ body {
     }
 }
 
-@media screen and (max-width: 313px){
-    .Footer {
-        padding-top: 2rem;
-        height: 50vh;
-    }
-}
-
 @media screen and (max-height: 581px){
     .Footer {
         padding-top: 2rem;
@@ -366,6 +359,9 @@ body {
     .Footer {
         padding-top: 2rem;
         height: 40vh;
+    }
+    .container .contactInfo .box .text p{
+        font-size: 10px;
     }
 }
 
