@@ -328,3 +328,78 @@ body {
         width:100%;
     }
 }
+
+@media screen and (max-width: 492px){
+    .Footer {
+        padding-top: 2rem;
+        height: 35vh;
+    }
+
+    .FooterHeading{
+        width:20%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 313px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 581px){
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-height: 523px){
+    .Footer {
+        padding-top: 2rem;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-height: 260px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 208px){
+    .Footer {
+        padding-top: 2rem;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 131px){
+    .Footer {
+        padding-top: 2rem;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 105px){
+    .Footer {
+        padding-top: 2rem;
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 70px){
+    .Footer {
+        padding-top: 2rem;
+        height: 200vh;
+    }
+}
