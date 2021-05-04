@@ -21,7 +21,7 @@ Body {
 }
 
 .FooterContainer {
-    background-color: #5765a3;
+    background-color: #686f8d;
     position: relative;
     margin-top: -100px;
     clear: both;
@@ -36,7 +36,7 @@ Body {
 .Footer {
     width: 80%;
     height: 15vh;
-    background-color: #5765a3;
+    background-color: #686f8d;
     color: white;
     display: flex;
     justify-content: center;
