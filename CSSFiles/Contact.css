@@ -346,6 +346,9 @@ body {
     .FooterHeading a {
         font-size: 0.8em;
     }
+    .box .text p{
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-height: 581px){
@@ -359,9 +362,6 @@ body {
     .Footer {
         padding-top: 2rem;
         height: 40vh;
-    }
-    .container .contactInfo .box .text p{
-        font-size: 10px;
     }
 }
 
