@@ -139,8 +139,9 @@ header{
 .container{
     width: 100%;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
     margin-top: 30px;
 }
 
@@ -149,14 +150,13 @@ header{
 }
 
 .container .contactInfo{
-    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .container .contactInfo .box{
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
 }
 
@@ -187,12 +187,12 @@ header{
 .contactForm{
     width: 40%;
     padding: 40px;
-    background: #fff;
+    background: #333;
 }
 
 .contactForm h2{
     font-size: 30px;
-    color: #333;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -208,9 +208,11 @@ header{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #fff;
     outline: none;
     resize: none;
+    background-color: #333;
+    color: #ffff;
 }
 
 .contactForm .inputBox span{
@@ -221,7 +223,7 @@ header{
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color: #fff;
 }
 
 .contactForm .inputBox input:focus ~ span, 
@@ -235,8 +237,8 @@ header{
 
 .contactForm .inputBox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
-    color: #fff;
+    background: #fff;
+    color: #333;
     border: none;
     cursor: pointer;
     padding: 10px;
