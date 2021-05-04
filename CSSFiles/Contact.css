@@ -26,7 +26,7 @@ Body {
     margin-top: -100px;
     clear: both;
     padding: 2rem 0 1rem;
-    margin: 6rem auto 0;
+    margin: 1rem auto 0;
     box-sizing: border-box;
     display: block;
     bottom: 0;
@@ -156,7 +156,7 @@ header{
 
 .container .contactInfo .box{
     position: relative;
-    padding: 30px 0;
+    padding: 55px 0;
     display: flex;
 }
 
