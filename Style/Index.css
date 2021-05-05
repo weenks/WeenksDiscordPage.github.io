@@ -142,6 +142,7 @@ main{
     margin-bottom: 1rem;
     font-size: 1.4em;
     color: rgb(90, 69, 212);
+    font-weight: bold;
 }
 
 .FooterHeading a {
