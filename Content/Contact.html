@@ -16,6 +16,7 @@
         <title>Weenks | About</title>
     </head>
     <body id="Body">
+        <script src="../Scripts/Contact.js"></script>
         <header>
             <img id="LogoImage" src="../Assets/Images/CompanyLogo.png">
             <div id="headerDiv">              
@@ -36,25 +37,27 @@
                 </div>
                 <div class="container">
                     <div class="contactForm">
-                        <form action="">
+                        <form action="https://formsubmit.co/weenksenterprise@gmail.com" method="POST" id="my-form">
                             <h2>Send Message</h2>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span>Full Name</span>
+                                <input type="text" id="name" name="name" required="required">
+                                <label for="name">Full Name</label>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
-                                <span>Email</span>
+                                <input type="text" id="email" name="email" required="required">
+                                <label for="email">Email</label>
                             </div>
                             <div class="inputBox">
-                                <textarea required="required"></textarea>
-                                <span>Type your Message</span>
+                                <textarea type="text" id="message" name="message"required="required"></textarea>
+                                <label for="message">Type your Message</label>
                             </div>
                             <div class="inputBox">
-                                <input type="submit" name="" value="Send">
+                                <input type="submit" value="Send">
                             </div>
+                            
                         </form>
                     </div>
+                    <div id="status" class=""></div>
                     <div class="contactInfo">
                         <div class="box">
                             <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div> 
