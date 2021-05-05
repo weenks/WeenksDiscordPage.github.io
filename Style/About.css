@@ -24,86 +24,9 @@
     color: rgb(31, 210, 255);
 }
 
-Body {
-    background-color: #4c3f54;
-    height: 100%;
-    min-height: 100%;
-}
-
 main{
     min-height: 100%;
     overflow: auto;
-}
-
-#Subtitle {
-    text-align: left;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    padding-left: 10px;
-}
-
-#Paragraph {
-    text-transform: uppercase;
-    font-family: 'Zen Dots', cursive;
-    font-size: 1em;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    width: 60%;
-    height: 100px;
-    padding: 15px;
-    margin-bottom: 20px;
-    line-height: 2;
-    display: inline-block;
-    position: static;
-}
-
-.TextDiv,
-.ButtonDiv {
-    text-align: center;
-    margin: auto;
-}
-
-/*Buttons Styling*/
-.ButtonDiv button {
-    margin: 20px;
-    padding: 16px 50px;
-    border: 3px solid;
-    background-color: rgb(0, 255, 221);
-    color: black;
-    display: inline-block;
-    font-family: 'Zen Dots', cursive;
-    text-transform: uppercase;
-    border-radius: 10px;
-    transition-duration: 0.4s;
-}
-.ButtonDiv button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.4s;
-}
-
-.ButtonDiv button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;
-}
-
-.ButtonDiv button:hover span {
-    padding-right: 25px;
-}
-
-.ButtonDiv button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-.ButtonDiv button:hover {
-    background-color: rgb(0, 150, 250); /* Green */
-    color: white;
 }
 
 /*Footer code*/
@@ -114,7 +37,7 @@ main{
     margin-top: -100px;
     clear: both;
     padding: 2rem 0 1rem;
-    margin: 6rem auto 0;
+    margin: 2rem auto 0;
     box-sizing: border-box;
     display: block;
     bottom: 0;
@@ -141,6 +64,7 @@ main{
 .FooterHeading h2 {
     margin-bottom: 1rem;
     font-size: 1.4em;
+    color: rgb(90, 69, 212);
 }
 
 .FooterHeading a {
@@ -150,7 +74,7 @@ main{
 }
 
 .FooterHeading a:hover {
-    color: rgb(0, 255, 221);
+    color: #415ee2;
     transition: 0.3s ease-out;
 }
 
@@ -191,6 +115,102 @@ header{
 
 .NavMenu li a:hover {
     color: #6072c4;
+}
+
+/*About Styling*/
+#Body{
+    height: 100%;
+    background: linear-gradient(90deg, #cab1b1 50%, #4c3f54 50%);
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top:2rem;
+    text-align: center;
+}
+
+.profile-section-left h1, .profile-section-left h2, .profile-section-left p{
+    color: #8d4eb4;
+}
+
+.profile-section-right h1, .profile-section-right h2, .profile-section-right p{
+    color: #cab1b1;
+}
+
+
+  /* Control the left side */
+.right {
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 100%;
+    background-color: #4c3f54;
+    z-index: 1010101010
+}
+
+  /* Control the right side */
+.left {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #cab1b1;
+    z-index: 1010101010
+}
+
+.center img{
+    height: 100px;
+}
+
+.container h1{
+    font-weight: 800;
+    font-family: "Bungee Inline", cursive;
+    font-size: 2.5em;
+}
+
+.container h2{
+    padding-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.container p{
+    font-size: 1.1em;
+}
+
+.separator{
+    display: block;
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #fff;
+}
+
+.innerWrapper{
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+    background-color: #333;
+    padding: 3rem;
+}
+
+.CreditDiv{
+    position: relative;
+    margin: 0.5rem;
+    font-size: 14px;
+    
+}
+
+.innerWrapper a{
+    color: #fff;
+    font-size: 14px;
 }
 
 /*ScrollBar styling*/
@@ -250,9 +270,15 @@ body {
     }
 }
 
-@media screen and (max-width: 560px) {
-    #NavButton{
+@media screen and (max-width: 640px) {
+    #logButton{
         display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container h1{
+        font-size: 2.2em;
     }
 }
 

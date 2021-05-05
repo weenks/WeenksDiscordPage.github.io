@@ -20,6 +20,7 @@ Body {
     padding: 8px;
 }
 
+/*Footer Stuff*/
 .FooterContainer {
     background-color: #686f8d;
     position: relative;
@@ -32,7 +33,6 @@ Body {
     bottom: 0;
 }
 
-/*Footer Stuff*/
 .Footer {
     width: 80%;
     height: 15vh;
@@ -54,6 +54,7 @@ Body {
 .FooterHeading h2 {
     margin-bottom: 1rem;
     font-size: 1.4em;
+    color: rgb(90, 69, 212);
 }
 
 .FooterHeading a {
@@ -63,7 +64,7 @@ Body {
 }
 
 .FooterHeading a:hover {
-    color: rgb(0, 255, 221);
+    color: #415ee2;
     transition: 0.3s ease-out;
 }
 
@@ -186,7 +187,7 @@ header{
 
 .contactForm{
     width: 40%;
-    padding: 40px;
+    padding: 30px;
     background: #333;
 }
 
