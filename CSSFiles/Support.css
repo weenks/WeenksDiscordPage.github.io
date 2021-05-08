@@ -15,12 +15,9 @@
   margin-right: auto;
 }
 
-#Title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Bungee Inline", cursive;
-  font-size: 5em;
-  color: rgb(31, 210, 255);
+main {
+  min-height: 100%;
+  overflow: auto;
 }
 
 Body {
@@ -29,81 +26,141 @@ Body {
   min-height: 100%;
 }
 
-main {
-  min-height: 100%;
-  overflow: auto;
+/* Grid code */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: stretch;
+  column-gap: 15px;
+  row-gap: 20px;
 }
 
-#Subtitle {
-  text-align: left;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  padding-left: 10px;
-}
-
-#Paragraph {
-  text-transform: uppercase;
-  font-family: "Zen Dots", cursive;
-  font-size: 1em;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  width: 60%;
-  height: 100px;
-  padding: 15px;
-  margin-bottom: 20px;
-  line-height: 2;
-  display: inline-block;
-  position: static;
-}
-
-.TextDiv,
-.ButtonDiv {
-  text-align: center;
+.btn {
+  background-color: #fff;
+  padding: 50px 60px;
   margin: auto;
+  outline: none;
+  border: none;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  cursor: pointer;
+  transition: 0.2s, box-shadow 0.2s;
+  margin: 15px;
+  display: inline-block;
+  text-align: center;
+  word-wrap: break-all;
+  position: relative;
+  border: 2px solid #fff;
 }
 
-/*Buttons Styling*/
-.ButtonDiv button {
-  margin: 20px;
-  padding: 16px 50px;
-  border: 3px solid;
-  background-color: rgb(0, 255, 221);
-  color: black;
-  display: inline-block;
-  font-family: "Zen Dots", cursive;
-  text-transform: uppercase;
-  border-radius: 10px;
-  transition-duration: 0.4s;
-}
-/*Text styling*/
-.ButtonDiv button span {
-  cursor: pointer;
+.btnz {
+  border: none;
+  outline: none;
   display: inline-block;
   position: relative;
-  transition: 0.4s;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  word-wrap: break-all;
+  margin: 5px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
 }
 
-.ButtonDiv button span:after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.4s;
-}
-
-.ButtonDiv button:hover span {
-  padding-right: 25px;
-}
-
-.ButtonDiv button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.ButtonDiv button:hover {
-  background-color: rgb(0, 150, 250); /* Green */
+.color .btn:hover {
+  background-color: rgb(0, 150, 250);
   color: white;
+  display: block;
+  border: 2px solid #fff;
+}
+
+.btn1 {
+  justify-self: stretch;
+  grid-area: btn1;
+}
+
+.btn2 {
+  justify-self: stretch;
+  grid-area: btn2;
+}
+
+.btn3 {
+  justify-self: stretch;
+  grid-area: btn3;
+}
+
+.btn4 {
+  justify-self: stretch;
+  grid-area: btn4;
+}
+
+.btn5 {
+  justify-self: stretch;
+  grid-area: btn5;
+}
+
+.btn6 {
+  justify-self: stretch;
+  grid-area: btn6;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: stretch;
+    column-gap: 5px;
+    row-gap: 6px;
+  }
+
+  .btn {
+    background-color: #fff;
+    padding: 50px 60px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    cursor: pointer;
+    transition: 0.2s, box-shadow 0.2s;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-all;
+    position: relative;
+    border: 2px solid #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: stretch;
+    column-gap: 5px;
+    row-gap: 6px;
+  }
+
+  .btn {
+    background-color: #fff;
+    padding: 50px 60px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    cursor: pointer;
+    transition: 0.2s, box-shadow 0.2s;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-all;
+    position: relative;
+    border: 2px solid #fff;
+  }
 }
 
 /*Footer code*/
