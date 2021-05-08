@@ -8,11 +8,20 @@
 }
 
 #LogoImage {
+<<<<<<< HEAD:CSSFiles/main.css
   width: 90px;
   height: 90px;
   display: block;
   cursor: pointer;
   margin-right: auto;
+=======
+    width: 80px;
+    height: 90px;
+    display: block;
+    cursor: pointer;
+    margin-right:auto;
+    padding: 8px;
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css
 }
 
 #Title {
@@ -109,6 +118,7 @@ main {
 /*Footer code*/
 
 .FooterContainer {
+<<<<<<< HEAD:CSSFiles/main.css
   background-color: #7e5699;
   position: relative;
   margin-top: -100px;
@@ -130,6 +140,29 @@ main {
   flex-wrap: wrap;
   margin: 0 auto;
   bottom: 0;
+=======
+    background-color: #686f8d;
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+    padding: 2rem 0 1rem;
+    margin: 6rem auto 0;
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+}
+
+.Footer {
+    width: 80%;
+    height: 15vh;
+    background-color: #686f8d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    bottom: 0;
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css
 }
 
 .FooterHeading {
@@ -139,8 +172,15 @@ main {
 }
 
 .FooterHeading h2 {
+<<<<<<< HEAD:CSSFiles/main.css
   margin-bottom: 1rem;
   font-size: 1.4em;
+=======
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+    color: rgb(90, 69, 212);
+    font-weight: bold;
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css
 }
 
 .FooterHeading a {
@@ -150,8 +190,13 @@ main {
 }
 
 .FooterHeading a:hover {
+<<<<<<< HEAD:CSSFiles/main.css
   color: rgb(0, 255, 221);
   transition: 0.3s ease-out;
+=======
+    color: #415ee2;
+    transition: 0.3s ease-out;
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css
 }
 
 /*Nav Menu configuration*/
@@ -191,7 +236,11 @@ header {
 }
 
 .NavMenu li a:hover {
+<<<<<<< HEAD:CSSFiles/main.css
   color: rgb(0, 255, 221);
+=======
+    color: #6072c4;
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css
 }
 
 /*ScrollBar styling*/
@@ -252,7 +301,95 @@ body {
 }
 
 @media screen and (max-width: 560px) {
+<<<<<<< HEAD:CSSFiles/main.css
   #NavButton {
     display: none;
   }
 }
+=======
+    #NavButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 492px){
+    .Footer {
+        padding-top: 2rem;
+        height: 35vh;
+    }
+
+    .FooterHeading{
+        width:20%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 313px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (min-height: 797px){
+    .ButtonDiv, .TextDiv{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-height: 581px){
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-height: 523px){
+    .Footer {
+        padding-top: 2rem;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-height: 260px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 208px){
+    .Footer {
+        padding-top: 2rem;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 131px){
+    .Footer {
+        padding-top: 2rem;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 105px){
+    .Footer {
+        padding-top: 2rem;
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 70px){
+    .Footer {
+        padding-top: 2rem;
+        height: 200vh;
+    }
+}
+>>>>>>> 44fb0b4f3a79ce6e3c21f019f43ed616a226a3f0:Style/Index.css

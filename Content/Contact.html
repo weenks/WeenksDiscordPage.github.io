@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
+        <link rel="stylesheet" href="../Style/Contact.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Zen+Dots&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+
+        <link rel="shortcut icon" href="../Assets/Images/CompanyIcon.ico">
+        <title>Weenks | Contact</title>
+    </head>
+    <body id="Body">
+        <script src="../Scripts/Contact.js"></script>
+        <header>
+            <img id="LogoImage" src="../Assets/Images/CompanyLogo.png">
+            <div id="headerDiv">              
+                <nav class="NavBar">
+                    <ul class="NavMenu" id="NavList">
+                        <li><a href="../index">Home</a></li>
+                        <li><a href="./About">About</a></li>
+                        <li id="logButton" class="NavButton"><a href="https://www.weenks.ml/Home/">Log In</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="contact">
+                <div class="content">
+                    <h2 class="title">Contac Us</h2>
+                    <p class="paragraph">If you have a problem, a suggestion, or maybe you just want to contact us, complete the form below to send us a message.</p>
+                </div>
+                <div class="container">
+                    <div class="contactForm">
+                        <form action="https://formsubmit.co/weenksenterprise@gmail.com" method="POST" id="my-form">
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" id="name" name="name" required="required">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" id="email" name="email" required="required">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="inputBox">
+                                <textarea type="text" id="message" name="message"required="required"></textarea>
+                                <label for="message">Type your Message</label>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div id="status" class=""></div>
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div> 
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>weenksenterprise@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="FooterContainer">
+                <div class="Footer">
+                    <div class="FooterHeading Footer1">
+                        <h2>About Us</h2>
+                        <a href="./About">About</a>                       
+                        <a href="./TermsOfService">Terms Of Service</a>
+                    </div>
+                    <div class="FooterHeading Footer2">
+                        <h2>Contact Us</h2>
+                        <a href="./Support">Support</a>
+                        <a href="./Contact">Contact</a>
+                    </div>
+                    <div class="FooterHeading Footer3">
+                        <h2>Social Media</h2>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

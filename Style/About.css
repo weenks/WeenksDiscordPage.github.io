@@ -8,11 +8,12 @@
 }
 
 #LogoImage {
-    width: 90px;
+    width: 80px;
     height: 90px;
     display: block;
     cursor: pointer;
     margin-right:auto;
+    padding: 8px;
 }
 
 #Title {
@@ -31,12 +32,12 @@ main{
 /*Footer code*/
 
 .FooterContainer {
-    background-color: #7e5699;
+    background-color: #686f8d;
     position: relative;
     margin-top: -100px;
     clear: both;
     padding: 2rem 0 1rem;
-    margin: 6rem auto 0;
+    margin: 2rem auto 0;
     box-sizing: border-box;
     display: block;
     bottom: 0;
@@ -45,7 +46,7 @@ main{
 .Footer {
     width: 80%;
     height: 15vh;
-    background-color: #7e5699;
+    background-color: #686f8d;
     color: white;
     display: flex;
     justify-content: center;
@@ -63,6 +64,8 @@ main{
 .FooterHeading h2 {
     margin-bottom: 1rem;
     font-size: 1.4em;
+    color: rgb(90, 69, 212);
+    font-weight: bold;
 }
 
 .FooterHeading a {
@@ -72,7 +75,7 @@ main{
 }
 
 .FooterHeading a:hover {
-    color: rgb(0, 255, 221);
+    color: #415ee2;
     transition: 0.3s ease-out;
 }
 
@@ -81,7 +84,7 @@ header li, header a, header Button{
     font-weight: 800;
     font-size: 1em;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header{
@@ -112,13 +115,13 @@ header{
 }
 
 .NavMenu li a:hover {
-    color: rgb(0, 255, 221);
+    color: #6072c4;
 }
 
 /*About Styling*/
 #Body{
     height: 100%;
-    background: linear-gradient(90deg, #4c3f54 50%, #e2d1d1 50%);
+    background: linear-gradient(90deg, #cab1b1 50%, #4c3f54 50%);
 }
 
 .container{
@@ -129,11 +132,11 @@ header{
 }
 
 .profile-section-left h1, .profile-section-left h2, .profile-section-left p{
-    color: #e2d1d1;
+    color: #8d4eb4;
 }
 
 .profile-section-right h1, .profile-section-right h2, .profile-section-right p{
-    color: #8d4eb4;
+    color: #cab1b1;
 }
 
 
@@ -143,7 +146,7 @@ header{
     width: 50%;
     float: right;
     height: 100%;
-    background-color: #e2d1d1;
+    background-color: #4c3f54;
     z-index: 1010101010
 }
 
@@ -153,7 +156,7 @@ header{
     width: 50%;
     float: left;
     height: 100%;
-    background-color: #4c3f54;
+    background-color: #cab1b1;
     z-index: 1010101010
 }
 
@@ -174,6 +177,41 @@ header{
 
 .container p{
     font-size: 1.1em;
+}
+
+.separator{
+    display: block;
+    position: relative;
+}
+
+.wrapper{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #fff;
+}
+
+.innerWrapper{
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+    background-color: #333;
+    padding: 3rem;
+}
+
+.CreditDiv{
+    position: relative;
+    margin: 0.5rem;
+    font-size: 14px;
+    
+}
+
+.innerWrapper a{
+    color: #fff;
+    font-size: 14px;
 }
 
 /*ScrollBar styling*/
@@ -242,5 +280,80 @@ body {
 @media screen and (max-width: 560px) {
     .container h1{
         font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 492px){
+    .Footer {
+        padding-top: 2rem;
+        height: 35vh;
+    }
+
+    .FooterHeading{
+        width:20%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 313px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 581px){
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-height: 523px){
+    .Footer {
+        padding-top: 2rem;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-height: 260px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 208px){
+    .Footer {
+        padding-top: 2rem;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 131px){
+    .Footer {
+        padding-top: 2rem;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 105px){
+    .Footer {
+        padding-top: 2rem;
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 70px){
+    .Footer {
+        padding-top: 2rem;
+        height: 200vh;
     }
 }

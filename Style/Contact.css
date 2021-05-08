@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Dots', cursive;
+}
+
+Body {
+    background-color: #4c3f54;
+    height: 100%;
+    min-height: 100vh;
+}
+
+#LogoImage {
+    width: 80px;
+    height: 90px;
+    display: block;
+    cursor: pointer;
+    margin-right:auto;
+    padding: 8px;
+}
+
+/*Footer Stuff*/
+.FooterContainer {
+    background-color: #686f8d;
+    position: relative;
+    margin-top: -100px;
+    clear: both;
+    padding: 2rem 0 1rem;
+    margin: 1rem auto 0;
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+}
+
+.Footer {
+    width: 80%;
+    height: 15vh;
+    background-color: #686f8d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    bottom: 0;
+}
+
+.FooterHeading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.FooterHeading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+    color: rgb(90, 69, 212);
+    font-weight: bold;
+}
+
+.FooterHeading a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.FooterHeading a:hover {
+    color: #415ee2;
+    transition: 0.3s ease-out;
+}
+
+/*Nav Menu configuration*/
+header li, header a, header Button{
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerDiv{
+    display: block;
+    margin-right:auto;
+}
+
+
+.NavMenu{
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.NavMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavMenu li a {
+    transition: all 0.5s ease 0s;
+}
+
+.NavMenu li a:hover {
+    color: #6072c4;
+}
+
+/*Contact Stuff*/
+.contact{
+    position: relative;
+    min-height: 80vh;
+    padding:50px 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: rgb(65, 167, 226);
+}
+.contact .content p{
+    font-weight: 300px;
+    color: #fff;
+}
+
+.paragraph{
+    padding: 30px;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 30px;
+}
+
+.container p{
+    color: #fff;
+}
+
+.container .contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width:60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size:22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(65, 167, 226);
+}
+
+.contactForm{
+    width: 40%;
+    padding: 30px;
+    background: #333;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    resize: none;
+    background-color: #333;
+    color: #ffff;
+}
+
+.contactForm .inputBox label{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.contactForm .inputBox input:focus ~ label, 
+.contactForm .inputBox input:valid ~ label,
+.contactForm .inputBox textarea:focus ~ label, 
+.contactForm .inputBox textarea:valid ~ label{
+    color: #e92e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    background-color: #cab1b1;
+    transition: 0.3s ease background-color;
+}
+
+#status{
+    display:flex;
+    flex-direction: column;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 9px;
+    width: 40%;
+}
+
+#status.success{
+    background-color: rgba(6, 250, 99, 0.3);
+    animation: status 4s ease delay forwards;
+}
+
+#status.error{
+    background-color: rgba(250, 6, 6, 0.3);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/*ScrollBar styling*/
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(105, 133, 143);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 63, 68);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px;  /* creates padding around scroll thumb */
+}
+
+/* Works on Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(51, 63, 68) rgb(105, 133, 143);
+}
+
+/*Style for different dimensions*/
+@media screen and (max-width: 802px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 18vh;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+
+    .FooterHeading{
+        width:25%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1.2em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #logButton{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .container h1{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo, .contactForm{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 492px){
+    .Footer {
+        padding-top: 2rem;
+        height: 35vh;
+    }
+
+    .FooterHeading{
+        width:20%;
+    }
+
+    .FooterHeading h2 {
+        font-size: 1em;
+    }
+
+    .FooterHeading a {
+        font-size: 0.8em;
+    }
+    .box .text p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 581px){
+    .Footer {
+        padding-top: 2rem;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-height: 523px){
+    .Footer {
+        padding-top: 2rem;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-height: 260px){
+    .Footer {
+        padding-top: 2rem;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-height: 208px){
+    .Footer {
+        padding-top: 2rem;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-height: 131px){
+    .Footer {
+        padding-top: 2rem;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 105px){
+    .Footer {
+        padding-top: 2rem;
+        height: 150vh;
+    }
+}
+
+@media screen and (max-height: 70px){
+    .Footer {
+        padding-top: 2rem;
+        height: 200vh;
+    }
+}
