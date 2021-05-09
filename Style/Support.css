@@ -24,7 +24,7 @@ main {
 Body {
   background-color: #4c3f54;
   height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 /* Grid code */
