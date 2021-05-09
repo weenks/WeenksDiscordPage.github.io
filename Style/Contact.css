@@ -12,11 +12,12 @@ Body {
 }
 
 #LogoImage {
-  width: 90px;
+  width: 80px;
   height: 90px;
   display: block;
   cursor: pointer;
   margin-right: auto;
+  padding: 8px;
 }
 
 /*Footer Stuff*/
