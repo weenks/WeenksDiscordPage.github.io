@@ -36,6 +36,8 @@ Body {
   align-content: stretch;
   column-gap: 15px;
   row-gap: 20px;
+  margin: 5rem;
+  padding-bottom: 3rem;
 }
 
 .btn {
@@ -164,15 +166,14 @@ Body {
   }
 }
 
-/*Footer code*/
-
+/*Footer Stuff*/
 .FooterContainer {
-  background-color: #7e5699;
+  background-color: #686f8d;
   position: relative;
-  margin-top: -100px;
+  margin-top: -200px;
   clear: both;
   padding: 2rem 0 1rem;
-  margin: 6rem auto 0;
+  margin: 1rem auto 0;
   box-sizing: border-box;
   display: block;
   bottom: 0;
@@ -181,7 +182,7 @@ Body {
 .Footer {
   width: 80%;
   height: 15vh;
-  background-color: #7e5699;
+  background-color: #686f8d;
   color: white;
   display: flex;
   justify-content: center;
@@ -199,6 +200,8 @@ Body {
 .FooterHeading h2 {
   margin-bottom: 1rem;
   font-size: 1.4em;
+  color: rgb(90, 69, 212);
+  font-weight: bold;
 }
 
 .FooterHeading a {
@@ -208,7 +211,7 @@ Body {
 }
 
 .FooterHeading a:hover {
-  color: rgb(0, 255, 221);
+  color: #415ee2;
   transition: 0.3s ease-out;
 }
 
@@ -249,7 +252,7 @@ header {
 }
 
 .NavMenu li a:hover {
-  color: rgb(0, 255, 221);
+  color: #6072c4;
 }
 
 /*ScrollBar styling*/
@@ -312,5 +315,90 @@ body {
 @media screen and (max-width: 560px) {
   #NavButton {
     display: none;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 35vh;
+  }
+
+  .FooterHeading {
+    width: 20%;
+  }
+
+  .FooterHeading h2 {
+    font-size: 1em;
+  }
+
+  .FooterHeading a {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 313px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-height: 797px) {
+  .conatiner{
+    margin: 3rem;
+  }
+  .Footer {
+    padding-top: 2rem;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-height: 581px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-height: 523px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-height: 260px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-height: 208px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-height: 131px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 105px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 150vh;
+  }
+}
+
+@media screen and (max-height: 70px) {
+  .Footer {
+    padding-top: 2rem;
+    height: 200vh;
   }
 }
