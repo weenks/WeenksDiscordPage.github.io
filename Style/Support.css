@@ -54,7 +54,7 @@ Body {
   text-align: center;
   word-wrap: break-all;
   position: relative;
-  border: 2px solid #fff;
+  border: 3px solid #000000;
 }
 
 .btnz {
@@ -69,6 +69,8 @@ Body {
   margin: 5px;
   border-bottom-width: 4px;
   border-bottom-style: solid;
+  padding: 10px;
+  font-weight: 800;
 }
 
 .color .btn:hover {
