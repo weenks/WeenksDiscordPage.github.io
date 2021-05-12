@@ -1,5 +1,5 @@
 import Paddle from "./Paddle.js";
-import InputHandler from "./input.js"
+import InputHandler from "./input.js";
 import Ball from "./ball.js";
 
 let canvas = document.getElementById("gameScreen");
@@ -24,7 +24,6 @@ function gameLoop(timestamp){
     ctx.clearRect(0, 0, 800, 600);
     paddle.update(deltaTime);
     paddle.draw(ctx);
-
     ball.draw(ctx);
 
     requestAnimationFrame(gameLoop);
