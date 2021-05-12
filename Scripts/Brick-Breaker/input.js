@@ -1,14 +1,42 @@
 export default class InputHandler{
-    constructor(){
+    constructor(paddle){
         document.addEventListener("keydown", event => {
             switch (event.keyCode) {
                 case 37:
-                alert("Move Left");
-                break;
+                    paddle.moveLeft();
+                    break;
 
                 case 39:
-                    alert("Move Right");
-                break;
+                    paddle.moveRight();
+                    break;
+                
+                case 65:
+                    paddle.moveLeft();
+                    break;
+                
+                case 68:
+                    paddle.moveRight();
+                    break;
+            }
+        });
+
+        document.addEventListener("keyup", event => {
+            switch (event.keyCode) {
+                case 37:
+                    if(paddle.speed < 0) paddle.stop();
+                    break;
+
+                case 39:
+                    if(paddle.speed > 0) paddle.stop();
+                    break;
+                
+                case 65:
+                    if(paddle.speed < 0) paddle.stop();
+                    break;
+                
+                case 68:
+                    if(paddle.speed > 0) paddle.stop();
+                    break;
             }
         });
     }
