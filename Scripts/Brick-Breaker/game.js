@@ -2,7 +2,6 @@ import Paddle from "./paddle.js";
 import InputHandler from "./input.js";
 import Ball from "./ball.js";
 import Brick from "./brick.js";
-
 import { buildLevel, level1, level2 } from "./levels.js";
 
 const GAMESTATE = {
@@ -55,9 +54,16 @@ export default class Game {
       return;
 
     if (this.bricks.length === 0) {
-      this.currentLevel++;
-      this.gamestate = GAMESTATE.NEWLEVEL;
-      this.start();
+        if(this.currentLevel == 0){
+          this.currentLevel++;
+          this.gamestate = GAMESTATE.NEWLEVEL;
+          this.start();
+        }
+        else if(this.currentLevel === 1){
+          this.currentLevel = 0;
+          this.gamestate = GAMESTATE.NEWLEVEL;
+          this.start();
+        }
     }
 
     [...this.gameObjects, ...this.bricks].forEach(object =>
@@ -86,13 +92,18 @@ export default class Game {
       ctx.fillStyle = "rgba(0,0,0,1)";
       ctx.fill();
 
-      ctx.font = "30px Arial";
-      ctx.fillStyle = "white";
+      ctx.font = "30px Zen Dots";
+      ctx.fillStyle = "aqua";
       ctx.textAlign = "center";
       ctx.fillText(
-        "Press SPACEBAR To Start",
+        "PRESS SPACEBAR TO START",
         this.gameWidth / 2,
         this.gameHeight / 2
+      );
+      ctx.fillText(
+        "YOU HAVE 3 LIVES",
+        this.gameWidth / 2,
+        this.gameHeight / 1.7
       );
     }
     if (this.gamestate === GAMESTATE.GAMEOVER) {
@@ -100,7 +111,7 @@ export default class Game {
       ctx.fillStyle = "rgba(0,0,0,1)";
       ctx.fill();
 
-      ctx.font = "30px Arial";
+      ctx.font = "30px Zen Dots";
       ctx.fillStyle = "white";
       ctx.textAlign = "center";
       ctx.fillText("GAME OVER", this.gameWidth / 2, this.gameHeight / 2);

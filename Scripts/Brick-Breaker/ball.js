@@ -8,7 +8,7 @@ export default class Ball {
     this.gameHeight = game.gameHeight;
 
     this.game = game;
-    this.size = 16;
+    this.size = 20;
     this.reset();
   }
 
