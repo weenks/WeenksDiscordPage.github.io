@@ -81,8 +81,8 @@ export default class Game {
       ctx.fillStyle = "rgba(0,0,0,0.5)";
       ctx.fill();
 
-      ctx.font = "30px Arial";
-      ctx.fillStyle = "white";
+      ctx.font = "30px Zen Dots";
+      ctx.fillStyle = "aqua";
       ctx.textAlign = "center";
       ctx.fillText("Paused", this.gameWidth / 2, this.gameHeight / 2);
     }
@@ -112,7 +112,7 @@ export default class Game {
       ctx.fill();
 
       ctx.font = "30px Zen Dots";
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "aqua";
       ctx.textAlign = "center";
       ctx.fillText("GAME OVER", this.gameWidth / 2, this.gameHeight / 2);
     }
