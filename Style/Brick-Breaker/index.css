@@ -1,6 +1,6 @@
 #gameScreen {
     border: 8px solid black;
-    background-color: gray;
+    background-color: rgb(56, 154, 199);
     padding: 0;
     margin: auto;
     display: block;
@@ -24,8 +24,8 @@ body{
 }
 
 #LogoImage {
-    width: 80px;
-    height: 90px;
+    width: 60px;
+    height: 70px;
     display: block;
     cursor: pointer;
     margin-right: auto;
