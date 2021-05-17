@@ -76,6 +76,7 @@ main {
 }
 
 .neon-button::before {
+  pointer-events: none;
   content: "";
   position: absolute;
   background: var(--clr-neon);
@@ -85,7 +86,24 @@ main {
   height: 100%;
 
   transform: perspective(1em) rotateX(40deg) scale(1, 0.45);
-  filter: blur(1em);
+  filter: blur(1.5em);
+  opacity: 2;
+}
+
+.neon-button::afer {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: blue;
+}
+.neon-button:hover,
+.neon-button:focus {
+  background: var(--clr-neon);
+  color: var(--clr-bg);
+  text-shadow: none;
 }
 
 /*Footer code*/
