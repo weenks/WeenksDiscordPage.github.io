@@ -1,0 +1,72 @@
+#gameScreen {
+    border: 8px solid black;
+    background-color: rgb(56, 154, 199);
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+img {
+    display: none;
+}
+
+body{
+    background-color: #50467c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Zen Dots", cursive;
+    font-size: 16px;
+}
+
+#LogoImage {
+    width: 60px;
+    height: 70px;
+    display: block;
+    cursor: pointer;
+    margin-right: auto;
+    padding: 8px;
+}
+
+header li,
+header a,
+header Button {
+    font-weight: 800;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerDiv {
+    display: block;
+    margin-right: auto;
+}
+
+.NavMenu {
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.NavMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NavMenu li a {
+    transition: all 0.5s ease 0s;
+}
+
+.NavMenu li a:hover {
+    color: #6072c4;
+}

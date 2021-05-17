@@ -8,13 +8,14 @@ export default class Ball {
     this.gameHeight = game.gameHeight;
 
     this.game = game;
-    this.size = 16;
+    this.width = 20;
+    this.height = 18;
     this.reset();
   }
 
   reset() {
     this.position = { x: 10, y: 400 };
-    this.speed = { x: 4, y: -2 };
+    this.speed = { x: 5, y: -3 };
   }
 
   draw(ctx) {
@@ -22,8 +23,8 @@ export default class Ball {
       this.image,
       this.position.x,
       this.position.y,
-      this.size,
-      this.size
+      this.width,
+      this.height
     );
   }
 
@@ -32,7 +33,7 @@ export default class Ball {
     this.position.y += this.speed.y;
 
     // wall on left or right
-    if (this.position.x + this.size > this.gameWidth || this.position.x < 0) {
+    if (this.position.x + this.width > this.gameWidth || this.position.x < 0) {
       this.speed.x = -this.speed.x;
     }
 
@@ -42,14 +43,14 @@ export default class Ball {
     }
 
     // bottom of game
-    if (this.position.y + this.size > this.gameHeight) {
+    if (this.position.y + this.height > this.gameHeight) {
       this.game.lives--;
       this.reset();
     }
 
     if (detectCollision(this, this.game.paddle)) {
       this.speed.y = -this.speed.y;
-      this.position.y = this.game.paddle.position.y - this.size;
+      this.position.y = this.game.paddle.position.y - this.height;
     }
   }
 }
