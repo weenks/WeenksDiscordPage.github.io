@@ -10,7 +10,7 @@ const gameBoard = document.getElementById("game-board")
 
 function main(currentTime) {
     if (gameOver) {
-        return alert("Game Over")
+        redirect(".../Content/SnakeMenu.html")
     }
     
 
