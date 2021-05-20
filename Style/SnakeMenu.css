@@ -48,7 +48,8 @@ main {
 
 .LogoName {
   font-size: 8rem;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Bungee Inline", cursive;
+  font-weight: 600;
   text-shadow: 0 0 0.05em hsl(0 0% 100% / 0.5), 0 0 0.25em var(--clr-neon);
 }
 
@@ -81,11 +82,11 @@ main {
   place-items: center;
 
   font-size: 4rem;
+  font-family: 'Zen Dots', cursive;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-neon);
-  font-family: "Balsamiq Sans", cursive;
   border: var(--clr-neon) 0.125em solid;
   padding: 0.05em 1em;
   border-radius: 0.25em;
@@ -139,56 +140,6 @@ main {
 .neon-button:hover::before,
 .neon-button:focus::before {
   opacity: 1;
-}
-
-/*Footer code*/
-
-.FooterContainer {
-  background-color: #686f8d;
-  position: relative;
-  margin-top: -100px;
-  clear: both;
-  padding: 2rem 0 1rem;
-  margin: 6rem auto 0;
-  box-sizing: border-box;
-  display: block;
-  bottom: 0;
-}
-
-.Footer {
-  width: 80%;
-  height: 15vh;
-  background-color: #686f8d;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  bottom: 0;
-}
-
-.FooterHeading {
-  display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
-}
-
-.FooterHeading h2 {
-  margin-bottom: 1rem;
-  font-size: 1.4em;
-  color: rgb(90, 69, 212);
-  font-weight: bold;
-}
-
-.FooterHeading a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.FooterHeading a:hover {
-  color: #415ee2;
-  transition: 0.3s ease-out;
 }
 
 /*Nav Menu configuration*/
