@@ -7,12 +7,13 @@ let gameOver = false;
 const gameBoard = document.getElementById("game-board");
 
 function redirect() {
-    window.location = "../Content/SnakeMenu.html";
+    window.location = "../Snake/SnakeMenu.html";
 }
 
 
 function main(currentTime) {
     if (gameOver) {
+        redirect()
         return alert("Game Over");
     }
 
