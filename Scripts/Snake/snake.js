@@ -10,13 +10,23 @@ let newSegments = 0;
 
 export function update() {
     addSegments();
+    console.log(snakeBody)
     const inputDirection = getInputDirection()
+    
+    if( inputDirection.x === 0 && inputDirection.y !== 0 && snakeBody.length === 1) {
+        expandSnake(2);
+    }
+    if( inputDirection.x !== 0 && inputDirection.y === 0 && snakeBody.length === 1) {
+        expandSnake(2);
+    }
     for( let i = snakeBody.length - 2; i >= 0; i--) {
         snakeBody[i + 1]  = { ...snakeBody[i]}
     }
 
     snakeBody[0].x += inputDirection.x;
     snakeBody[0].y += inputDirection.y;
+    
+
 }
 
 export function draw(gameBoard) {
@@ -51,6 +61,7 @@ export function snakeIntersection() {
 function equalPositions(pos1, pos2) {
     return pos1.x === pos2.x && pos1.y === pos2.y; 
 }
+
 
 function addSegments() {
     for (let i = 0; i < newSegments; i++){
